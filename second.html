@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="he,iw">
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=9" />
+	<title></title>  
+  
+	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css"> -->
+	<link rel="stylesheet" href="style/jquery.mobile-1.3.1.css">
+	<link rel="stylesheet/less" type="text/css" href="style/style.less" />
+	
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	<script src="js/less-1.3.3.min.js"></script>
+	<script src="js/underscore.js"></script>
+	<script src="js/playerServices.js"></script>
+	<script src="js/second.js"></script>
+</head>
+<body>
+	<!-- Home -->
+	<div data-role="page" id="page1">	
+		<div data-role="header">
+			<a href="#"  data-rel="back" data-icon="arrow-l" class="ui-icon-alt  
+			 data-role="button" >
+				back
+			</a>
+			<h1>
+				Eretz Coins
+			</h1>
+		</div>
+	
+		<div data-role="content">	
+			<div>				
+				<div data-role="collapsible" data-theme="a" data-content-theme="d" 
+				data-expanded-icon="arrow-u" data-collapsed-icon="arrow-d"
+				class="ui-icon-alt" data-collapsed="false">
+					<h4>הוראות למשחק</h4>
+					<ol  dir="rtl" style="font-size: 15px;font-weight: bold;">
+						<li> לפניך לוח בינגו בו מסתתרות 16 חיות</li>
+						<li> כל מספר צבעוני בלוח מייצג מספר ארון תצוגה בו מופיעה חיה </li>
+						<li> הרשם למשחק עם מספר השחקן  שקיבלת </li>
+						<li> לחץ על המספר ותופיע לפניך חידה הקשורה בחיה</li>
+						<li> אם תפתור את החידה יהפוך המספר למטבע</li>
+						<li> תוכל להתחרות בחבריך מי סיים את הלוח ראשון</li>
+						<li> כשתסיים תוכל להראות את הלוח למדריך </li>
+					</ol>
+				</div>				
+			</div>
+			
+			<div style="padding: 10px;background-color: rgba(51, 51, 51, 0.3);border-radius: 6px;">
+				<input id="playerId" type="text" name="playerId" value="" dir="rtl">
+				<a id="initGame" data-role="button" href="#" data-ajax="false" data-icon="arrow-r" data-iconpos="right" class="ui-icon-alt">
+					למשחק
+				</a>
+			</div>
+		</div>	
+		
+	</div>
+</body>
+</html>
